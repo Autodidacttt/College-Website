@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aethelred Institute of Technology</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and apply responsive design -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'ait-blue': '#1e3a8a',
+                        'ait-light': '#bfdbfe',
+                        'ait-dark': '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar styling for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        /* Smooth scrolling for internal links */
+        html {
+            scroll-behavior: smooth;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-ait-dark">
+
+    <!-- Header and Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo/College Name -->
+            <div class="flex items-center space-x-2">
+                <!-- A simple SVG Icon for the college logo -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-ait-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21v-4m0 0V3M3 17h18M3 5h18m-9 12h9m-9 0H3m9-5h9m-9 0H3m9-5h9m-9 0H3"/>
+                </svg>
+                <h1 class="text-xl sm:text-2xl font-extrabold text-ait-blue tracking-tight">AIT</h1>
+            </div>
+            <!-- Navigation Links (Hidden on mobile, uses a simple dropdown concept) -->
+            <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
+                <a href="#vision" class="hover:text-ait-blue transition duration-150">Vision & Mission</a>
+                <a href="#pso" class="hover:text-ait-blue transition duration-150">Academics</a>
+                <a href="#courses" class="hover:text-ait-blue transition duration-150">Courses</a>
+                <a href="#gallery" class="hover:text-ait-blue transition duration-150">Events</a>
+                <a href="#recruiters" class="hover:text-ait-blue transition duration-150">Recruiters</a>
+            </nav>
+            <!-- Mobile Menu Button (Placeholder for functionality) -->
+            <button class="md:hidden p-2 text-gray-600 hover:text-ait-blue rounded-lg transition duration-150">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+        <!-- Hero Section -->
+        <section class="mb-16 bg-ait-blue p-8 sm:p-12 rounded-xl shadow-2xl text-white">
+            <h2 class="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight">
+                Innovating the Future, One Scholar at a Time.
+            </h2>
+            <p class="text-xl font-light opacity-90">
+                Welcome to Aethelred Institute of Technology—the hub for next-generation engineers and creative thinkers.
+            </p>
+        </section>
+
+        <!-- 1. Vision and Mission -->
+        <section id="vision" class="mb-16">
+            <h3 class="text-3xl sm:text-4xl font-bold text-ait-blue mb-8 border-b-4 border-ait-light pb-2">Our Vision & Mission</h3>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Vision Card -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500 hover:shadow-xl transition duration-300">
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5h6"/></svg>
+                        Vision
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        To be globally recognized as a premier institute providing holistic, high-quality technical education, fostering innovation, entrepreneurship, and research excellence that addresses complex societal challenges and drives sustainable development.
+                    </p>
+                </div>
+
+                <!-- Mission Card -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-green-500 hover:shadow-xl transition duration-300">
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                        Mission
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        To offer cutting-edge academic programs, promote industry-institute collaboration, cultivate a research-centric environment, and instill ethical values, transforming students into highly competent, socially responsible professionals and leaders.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Program Specific Outcomes (PSOs) and Courses Offered -->
+        <section id="pso" class="mb-16">
+            <h3 class="text-3xl sm:text-4xl font-bold text-ait-blue mb-8 border-b-4 border-ait-light pb-2">Academics: Outcomes & Courses</h3>
+
+            <div class="bg-white p-8 rounded-xl shadow-xl mb-12">
+                <h4 class="text-2xl font-semibold text-gray-800 mb-4 border-b pb-2">Program Specific Outcomes (PSOs) - B.Tech. CSE</h4>
+                <ul class="space-y-4 text-gray-600 list-inside">
+                    <li class="flex items-start">
+                        <span class="text-ait-blue font-bold mr-2">PSO 1:</span>
+                        <span class="flex-1">
+                            **Software Systems Expertise:** Ability to analyze, design, and develop complex software solutions using modern programming paradigms, tools, and databases.
+                        </span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-ait-blue font-bold mr-2">PSO 2:</span>
+                        <span class="flex-1">
+                            **Hardware-Software Integration:** Capability to apply knowledge of embedded systems, networking, and data communications to build and maintain secure, integrated systems.
+                        </span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-ait-blue font-bold mr-2">PSO 3:</span>
+                        <span class="flex-1">
+                            **Emerging Technologies:** Competence in utilizing machine learning, cloud computing, and cybersecurity principles to innovate solutions for real-world problems.
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Courses Offered -->
+            <div id="courses" class="bg-gray-100 p-8 rounded-xl shadow-xl">
+                <h4 class="text-2xl font-semibold text-gray-800 mb-6 border-b pb-2">Courses Offered (Undergraduate - B.Tech.)</h4>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="p-4 bg-white rounded-lg shadow-md border-l-4 border-yellow-500">
+                        <p class="font-bold text-lg text-gray-800">Computer Science & Engineering</p>
+                        <p class="text-sm text-gray-500">Focus on AI/ML and Data Science.</p>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg shadow-md border-l-4 border-green-500">
+                        <p class="font-bold text-lg text-gray-800">Electronics & Communication Engg.</p>
+                        <p class="text-sm text-gray-500">Specialization in VLSI and IoT.</p>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg shadow-md border-l-4 border-red-500">
+                        <p class="font-bold text-lg text-gray-800">Mechanical Engineering</p>
+                        <p class="text-sm text-gray-500">Focus on Robotics and CAD/CAM.</p>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg shadow-md border-l-4 border-purple-500">
+                        <p class="font-bold text-lg text-gray-800">Civil Engineering</p>
+                        <p class="text-sm text-gray-500">Specialization in Structural and Water Resources.</p>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg shadow-md border-l-4 border-indigo-500">
+                        <p class="font-bold text-lg text-gray-800">Electrical Engineering</p>
+                        <p class="text-sm text-gray-500">Focus on Power Systems and Control.</p>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg shadow-md border-l-4 border-pink-500">
+                        <p class="font-bold text-lg text-gray-800">M.Tech. in Computational Data Science</p>
+                        <p class="text-sm text-gray-500">Postgraduate research-oriented program.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Image Gallery of Events -->
+        <section id="gallery" class="mb-16">
+            <h3 class="text-3xl sm:text-4xl font-bold text-ait-blue mb-8 border-b-4 border-ait-light pb-2">Event Gallery: Life at AIT</h3>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Image 1: Tech Fest -->
+                <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x300/3498db/ffffff?text=Tech+Fest" alt="Tech Fest Event" class="w-full h-32 sm:h-48 object-cover">
+                    <p class="p-2 text-sm font-medium text-gray-700 bg-white">Innovate 2025</p>
+                </div>
+                <!-- Image 2: Convocation -->
+                <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x300/2ecc71/ffffff?text=Convocation" alt="Convocation Ceremony" class="w-full h-32 sm:h-48 object-cover">
+                    <p class="p-2 text-sm font-medium text-gray-700 bg-white">Graduation Day</p>
+                </div>
+                <!-- Image 3: Sports Day -->
+                <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x300/e74c3c/ffffff?text=Sports+Meet" alt="Annual Sports Meet" class="w-full h-32 sm:h-48 object-cover">
+                    <p class="p-2 text-sm font-medium text-gray-700 bg-white">Annual Sports Meet</p>
+                </div>
+                <!-- Image 4: Workshop -->
+                <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x300/f39c12/ffffff?text=Coding+Workshop" alt="Coding Workshop" class="w-full h-32 sm:h-48 object-cover">
+                    <p class="p-2 text-sm font-medium text-gray-700 bg-white">Industry Workshop</p>
+                </div>
+                <!-- Image 5: Cultural -->
+                <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x300/9b59b6/ffffff?text=Cultural+Night" alt="Cultural Night Performance" class="w-full h-32 sm:h-48 object-cover">
+                    <p class="p-2 text-sm font-medium text-gray-700 bg-white">Cultural Night</p>
+                </div>
+                <!-- Image 6: Robotics Club -->
+                <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x300/34495e/ffffff?text=Robotics+Club" alt="Robotics Club Activity" class="w-full h-32 sm:h-48 object-cover">
+                    <p class="p-2 text-sm font-medium text-gray-700 bg-white">Robotics Competition</p>
+                </div>
+                <!-- Image 7: Seminar -->
+                <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x300/1abc9c/ffffff?text=Guest+Lecture" alt="Guest Lecture Seminar" class="w-full h-32 sm:h-48 object-cover">
+                    <p class="p-2 text-sm font-medium text-gray-700 bg-white">Guest Speaker Series</p>
+                </div>
+                <!-- Image 8: Campus View -->
+                <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x300/e67e22/ffffff?text=AIT+Campus" alt="AIT Campus View" class="w-full h-32 sm:h-48 object-cover">
+                    <p class="p-2 text-sm font-medium text-gray-700 bg-white">Main Building</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Top Recruiters -->
+        <section id="recruiters" class="mb-16 bg-ait-light p-8 rounded-xl shadow-xl">
+            <h3 class="text-3xl sm:text-4xl font-bold text-ait-blue mb-8 border-b-4 border-ait-blue/50 pb-2">Our Top Recruiting Partners</h3>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+                <!-- Recruiter 1 -->
+                <div class="p-4 bg-white rounded-lg shadow-md flex items-center justify-center h-20 hover:scale-105 transition duration-300">
+                    <span class="text-xl font-bold text-gray-800">TechCorp</span>
+                </div>
+                <!-- Recruiter 2 -->
+                <div class="p-4 bg-white rounded-lg shadow-md flex items-center justify-center h-20 hover:scale-105 transition duration-300">
+                    <span class="text-xl font-bold text-gray-800">GlobalSoft</span>
+                </div>
+                <!-- Recruiter 3 -->
+                <div class="p-4 bg-white rounded-lg shadow-md flex items-center justify-center h-20 hover:scale-105 transition duration-300">
+                    <span class="text-xl font-bold text-gray-800">InfraPro</span>
+                </div>
+                <!-- Recruiter 4 -->
+                <div class="p-4 bg-white rounded-lg shadow-md flex items-center justify-center h-20 hover:scale-105 transition duration-300">
+                    <span class="text-xl font-bold text-gray-800">InnovateX</span>
+                </div>
+                <!-- Recruiter 5 -->
+                <div class="p-4 bg-white rounded-lg shadow-md flex items-center justify-center h-20 hover:scale-105 transition duration-300">
+                    <span class="text-xl font-bold text-gray-800">BioDynamics</span>
+                </div>
+                <!-- Recruiter 6 -->
+                <div class="p-4 bg-white rounded-lg shadow-md flex items-center justify-center h-20 hover:scale-105 transition duration-300">
+                    <span class="text-xl font-bold text-gray-800">PrimeAuto</span>
+                </div>
+            </div>
+            <p class="text-center text-sm mt-6 text-gray-600">
+                These industry leaders recruit AIT graduates annually across various domains.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-ait-dark text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-lg font-medium mb-2">Aethelred Institute of Technology</p>
+            <p class="text-sm opacity-75">
+                © 2025 AIT. All rights reserved. | Built with HTML & CSS.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
